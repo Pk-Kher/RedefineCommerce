@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback");
+@import "./additionalStyles/utility-patterns.scss";
+@import "./additionalStyles/range-slider.scss";
+@import "./additionalStyles/toggle-switch.scss";
+@import "./additionalStyles/flatpickr.scss";
+@import "./additionalStyles/theme.scss";
+@import "var(--page-font-url)";
+@import "var(--body-font-url)";
+// @tailwind utilities;
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Kolker+Brush&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Poor+Story&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Teko:wght@300;400;500;600;700&display=swap"); */
+
+@layer utilities {
+      #contentbody h1.text-gray-800 {
+    @apply text-gray-800 font-title text-title;
+  }
+      #sidebar {
+    @apply bg-sidebar-100;
+  }
+      .btn.text-white {
+    @apply text-buttontext-500;
+  }
+      .btn.text-white:hover {
+    @apply text-buttontext-400;
+  }
+      .text-\[\#191919\] {
+    @apply text-gray-600;
+  }
+      .text-\[\#b3b3b3\] {
+    @apply text-gray-800;
+  }
+      .text-\[\#BDBDC2\] {
+    @apply text-gray-800;
+  }
+      #sidebar ul li a.bg-red-500 .text-white {
+    @apply text-sidebartext-500;
+  }
+}

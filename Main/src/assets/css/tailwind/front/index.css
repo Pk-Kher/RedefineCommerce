@@ -1,0 +1,98 @@
+@config "../../../../../tailwind.front.config.js";
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .btn {
+        @apply px-2 lg:px-4 py-1 lg:py-2 text-sm lg:text-base font-normal inline-block border-0 outline-none ring-0
+    }
+    .btn-sm {
+        @apply px-1 lg:px-4 py-1 text-xs font-normal
+    }
+    .btn-lg {
+        @apply px-4 lg:px-8 py-1 lg:py-3 text-base lg:text-xl font-semibold
+    }
+    .btn-xl {
+        @apply px-5 lg:px-12 py-2 lg:py-4 text-lg lg:text-2xl font-semibold
+    }
+    .btn-primary {
+        @apply bg-primary text-primarytext border-primary-width border-primary rounded-primary-radius
+    }
+    .btn-primary:hover, .btn-primary:focus {
+        @apply bg-primary-hover text-primarytext-hover border-primary-width border-primary-hover rounded-primary-radius
+    }
+    .btn-secondary {
+        @apply bg-secondary text-secondarytext border-secondary-width border-secondary rounded-secondary-radius
+    }
+    .btn-secondary:hover, .btn-secondary:focus {
+        @apply bg-secondary-hover text-secondarytext-hover border-secondary-width border-secondary-hover rounded-secondary-radius
+    }
+    .btn-outline-primary {
+        @apply text-primary border-primary-width border-primary rounded-primary-radius
+    }
+    .btn-outline-primary:hover, .btn-outline-primary:focus {
+        @apply text-primary border-primary-width border-primary-hover rounded-primary-radius
+    }
+    .btn-outline-secondary {
+        @apply text-secondary border-secondary-width border-secondary rounded-secondary-radius
+    }
+    .btn-outline-secondary:hover, .btn-outline-secondary:focus {
+        @apply text-secondary border-secondary-width border-secondary-hover rounded-secondary-radius
+    }
+    /**/
+    a {@apply text-anchor}
+    a:hover, a:focus {@apply text-anchor-hover}
+    .text-default-text p {@apply mb-2.5}
+    .form-input {@apply block w-full bg-none bg-white border border-gray-300 py-2 px-3 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm}
+    select.form-input {@apply block w-full bg-none bg-white border border-gray-300 py-2 pl-3 pr-10 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm}
+    /**/
+    .white-all .lg\:text-title {@apply text-white}
+    .white-all .lg\:text-sub-title {@apply text-white}
+    .white-all .lg\:text-small-title {@apply text-white}
+    .white-all .text-default-text {@apply text-white}
+    .white-title .lg\:text-title {@apply text-white}
+    .white-sub-title .lg\:text-sub-title {@apply text-white}
+    .white-small-title .lg\:text-small-title {@apply text-white}
+    .white-default-text .lg\:text-default-text {@apply text-white}
+
+    .white-all .color-title {@apply text-white}
+    .white-all .color-sub-title {@apply text-white}
+    .white-all .color-small-title {@apply text-white}
+    .white-all .color-default-text {@apply text-white}
+    .white-title .color-title {@apply text-white}
+    .white-sub-title .color-sub-title {@apply text-white}
+    .white-small-title .color-small-title {@apply text-white}
+    .white-default-text .color-default-text {@apply text-white}
+    
+}
+@media (min-width: 1200px){
+    .container {max-width: 1570px; width: 100%;}
+}
+@media (max-width: 768px){
+    .container {
+        @apply px-1
+    }
+    /* .btn-lg {
+        @apply px-4 py-1 text-base font-semibold
+    }
+    .btn-xl {
+        @apply px-5 py-2 text-lg font-semibold
+    } */
+}
+/* .filter-type ul {}
+.filter-type ul li {display: block;} */
+/* .filter-type ul li a {   color: #000;  display: flex; align-items: center;} */
+

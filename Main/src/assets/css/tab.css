@@ -1,0 +1,93 @@
+/* created at 5:39 AM at 11/04/2022*/
+/* react tabs scrollable */
+:root {
+  --rts-primary-color: white;
+  --rts-gray-color: #ddd;
+  --rts-white-color: black;
+}
+.display___block {
+  display: block;
+}
+.display____inline___block {
+  display: inline-block;
+}
+.display___none {
+  display: none !important;
+}
+@media (max-width: 991.98px) {
+  .display___md___none {
+    display: none !important;
+  }
+}
+
+.rts___tabs___container {
+  display: flex;
+}
+@media (max-width: 991.98px) {
+  .rts___tabs___container {
+    padding: 5px;
+  }
+}
+.rts___tabs.hide___rts___tabs___scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.rts___tabs.hide___rts___tabs___scroll::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .rts___tab {
+    margin: 0 2px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rts___tab {
+    padding: 5px 20px;
+  }
+}
+
+.rts___nav___btn___container {
+  display: flex;
+}
+.rts___tab___selected {
+  /* background-color: var(--rts-primary-color); */
+  font-weight: bold;
+  color: var(--rts-white-color);
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+}
+
+.rts___tab___selected:hover {
+  color: black;
+}
+
+.rts___nav___btn {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rts___nav___btn:hover {
+  background-color: var(--rts-primary-color);
+  color: red;
+  transition: 0.5s all;
+}
+.rts___nav___btn:hover > svg {
+  stroke: var(--rts-white-color);
+}
+@media (max-width: 767.98px) {
+  .rts___nav___btn > svg {
+    width: 15px;
+  }
+}
+button:disabled.rts___btn,
+button[disabled].rts___btn {
+  cursor: not-allowed;
+  color: var(--rts-gray-color);
+  pointer-events: none;
+}
+button:disabled.rts___btn,
+button[disabled].rts___btn svg {
+  stroke: var(--rts-gray-color);
+}

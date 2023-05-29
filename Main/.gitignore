@@ -1,0 +1,18 @@
+### react ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+build
+src/assets/css/tailwind/output.css
+
+build
+.idea
+
+bower_components
+.zip
+
+.vscode 

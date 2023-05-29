@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+
+    <!-- <title>CMS</title> -->
+  </head>
+  <body
+    class="font-inter antialiased bg-slate-100 text-gray-600"
+    :class="{ 'sidebar-expanded': sidebarExpanded }"
+    x-data="{ page: 'dashboard', sidebarOpen: false, sidebarExpanded: localStorage.getItem('sidebar-expanded') == 'true' }"
+    x-init="$watch('sidebarExpanded', value => localStorage.setItem('sidebar-expanded', value))"
+  >
+    <noscript>
+      if (localStorage.getItem('sidebar-expanded') == 'true') {
+      document.querySelector('body').classList.add('sidebar-expanded'); } else {
+      document.querySelector('body').classList.remove('sidebar-expanded'); }
+      document.getElementById("favicon").href= localStorage.getItem('favicon');
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
